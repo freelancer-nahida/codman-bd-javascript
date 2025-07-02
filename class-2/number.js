@@ -39,4 +39,4 @@ console.log(parseFloat(number));
 
 
 let randomNumber = Math.floor((Math.random() * 100) + 1)// 0 to 1 -> value
-console.log('Roll a dice:', randomNumber);
+console.log('Roll a dice:', 
