@@ -126,10 +126,8 @@ let mathMarks = 0;
 let englishMark = 50;
 let scienceMarks = 35;
 
-
 const averageMark = (mathMarks + englishMark + scienceMarks) / 3;
 // console.log('Avarage Mark:', averageMark);
-
 
 if (averageMark >= 90) {
     console.log('Result is A+');
