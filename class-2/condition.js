@@ -2,12 +2,14 @@ let isDarkMood = true;
 
 // if (isDarkMood == false) {
 //     console.log('Darkmood is disableable');
-
 // }
 // else {
 //     console.log('darkMood is enable');
-
 // }
+//condition?_______ : _________;
+
+
+// isDarkMood === true ? console.log('Darkmood is disableable') : console.log('darkMood is enable');
 
 // if (isDarkMood == true) {
 //     console.log('Darkmood is enable');
@@ -37,8 +39,6 @@ let isDarkMood = true;
 //     console.log(false);
 
 // }
-
-
 
 // if(age > 35){
 //     console.log();
@@ -122,34 +122,47 @@ let isDarkMood = true;
 // 40->D
 // Below 40 Is Fall
 
-let mathMarks = 0;
-let englishMark = 50;
-let scienceMarks = 35;
+// let mathMarks = 0;
+// let englishMark = 50;
+// let scienceMarks = 35;
 
-const averageMark = (mathMarks + englishMark + scienceMarks) / 3;
+// const averageMark = (mathMarks + englishMark + scienceMarks) / 3;
 // console.log('Avarage Mark:', averageMark);
 
-if (averageMark >= 90) {
-    console.log('Result is A+');
+// if (averageMark >= 90) {
+//     console.log('Result is A+');
 
-}
-else if (averageMark >= 80) {
-    console.log('Result is A');
+// }
+// else if (averageMark >= 80) {
+//     console.log('Result is A');
 
-}
-else if (averageMark >= 60) {
-    console.log('Result is B+');
+// }
+// else if (averageMark >= 60) {
+//     console.log('Result is B+');
 
-}
-else if (averageMark >= 50) {
-    console.log('Result is C');
+// }
+// else if (averageMark >= 50) {
+//     console.log('Result is C');
 
-}
-else if (averageMark >= 40) {
-    console.log('Result is D');
+// }
+// else if (averageMark >= 40) {
+//     console.log('Result is D');
 
-}
-else {
-    console.log('Failed');
+// }
+// else {
+//     console.log('Failed');
 
+// }
+
+// const gretting = (person) => {
+//     let name = person ? person : 'string'
+//     return ` hello ${name}`;
+// }
+// console.log(gretting('sakib'));
+
+// annonimas function
+const userAuthentication = (user) => {
+    let auth = user ? 'User is logged in' : " user is not logged in";
+    return auth;
 }
+console.log(userAuthentication('nahida'));

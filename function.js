@@ -153,18 +153,38 @@ function avarageMark(mathMarks = 0, englishMark = 0, scienceMarks = 0) {
 avarageMark(78, 88, 99);
 
 
-function add(num1, num2) {
+// function add(num1, num2) {
 
-    // console.log('Add', num1 + num2);
-    return num1 + num2
+//     // console.log('Add', num1 + num2);
+//     return num1 + num2
 
-}
+// }
 
 
-let addition = add(12, 45);
+// let addition = add(12, 45);
 
-console.log(addition);
+// console.log(addition);
 
 // console.log(add(12, 45));
 
 // add(12, 45)
+
+//Arrow Function
+
+// const addNumber = (a, b) => a + b;
+// console.log(addNumber(52, 12));
+
+
+// const addNumber =(a,b,c)=>{
+//     let total = a+b+c;
+//     return total;
+// }
+// // addNumber(12,55,58)
+// const result = addNumber(12,55,58);
+// console.log( result);
+
+function addNumber(a, b, c) {
+    return a + b + c
+}
+const Result = addNumber(66, 55, 88);
+console.log(Result);
