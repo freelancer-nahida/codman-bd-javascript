@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+</head>
+
+<body>
+    <style>
+        .overlay {
+            background-color: rgb(183, 193, 223, 0.623);
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            /* display: none; */
+        }
+
+        .popup {
+            background-color: white;
+            padding: 30px;
+            border: 5px dashed black;
+            position: relative;
+        }
+
+        .popup span {
+            color: rgb(241, 233, 2);
+        }
+
+        .close-icon svg {
+            width: 20px;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+    <main>
+        <section>
+            <div class="popup-body">
+
+                <h2>We have a new offer ! check it out: </h2>
+                <button id="btn">Check offer!</button>
+            </div>
+        </section>
+        <div class="overlay">
+            <div class="popup">
+                <div class="close-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+
+                </div>
+                <h2>Use coupon <span>Happy 20</span>to get 40%off</h2>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        //button click korle popup ta on hobe
+        //overly te click korle popup ta hide hoya jabe
+
+        //Selector
+        const btn = document.getElementById("btn");
+        const overly = document.querySelector(".overlay")
+        const closeBtn = document.querySelector(".close-icon")
+
+
+        const popupHeading = document.querySelector(".popup-body h2")
+
+        btn.style.backgroundColor = "red";
+        btn.style.color = "white";
+        btn.style.padding = "10px 20px";
+
+        popupHeading.style.backgroundColor = "green";
+
+        btn.addEventListener("click", () => {
+            // console.log("click");
+            overly.style.display = "flex";
+        });
+
+        overly.addEventListener("click", () => {
+            overly.style.display = "none";
+        });
+
+    </script>
+</body>
+
+</html>
